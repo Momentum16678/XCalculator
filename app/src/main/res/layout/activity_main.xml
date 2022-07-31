@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text=""
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBracket1"
+            style="@style/buttonNumber"
+            android:textColor="@color/green"
+            android:text="("/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBracket2"
+            style="@style/buttonNumber"
+            android:textColor="@color/green"
+            android:text=")"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackspace"
+            style="@style/buttonNumber"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_baseline_backspace_24"
+            android:drawableTint="@color/green"
+            android:layout_gravity="center"
+            android:paddingStart="37dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDivide"
+            style="@style/buttonNumber"
+            android:textColor="@color/green"
+            android:text="/"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            style="@style/buttonNumber"
+            android:text="7"/>
+        <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/btn8"
+            style="@style/buttonNumber"
+            android:text="8"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            style="@style/buttonNumber"
+            android:text="9"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMultiply"
+            style="@style/buttonNumber"
+            android:text="*"
+            android:textSize="20sp"
+            android:textColor="@color/green"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            style="@style/buttonNumber"
+            android:text="4"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            style="@style/buttonNumber"
+            android:text="5"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            style="@style/buttonNumber"
+            android:text="6"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMinus"
+            style="@style/buttonNumber"
+            android:textColor="@color/green"
+            android:text="-"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            style="@style/buttonNumber"
+            android:text="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            style="@style/buttonNumber"
+            android:text="2"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            style="@style/buttonNumber"
+            android:text="3"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlus"
+            style="@style/buttonNumber"
+            android:textColor="@color/green"
+            android:text="+"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn0"
+            style="@style/buttonNumber"
+            android:text="0"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDot"
+            style="@style/buttonNumber"
+            android:text="."/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAC"
+            style="@style/buttonNumber"
+            android:textColor="@color/green"
+            android:text="AC"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEqual"
+            style="@style/buttonNumber"
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:text="="/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
